@@ -1,7 +1,10 @@
 let options = {
     rootMargin: '0px',
-    threshold: .5
+    threshold: .3
   }
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
 
 let pageIntersectionElems = []
 pageIntersectionElems.push(document.querySelector('.about'))
@@ -14,9 +17,8 @@ pageIntersectionElems.push(document.querySelector('.contact'))
 console.log('yo')
 let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting){
-            entry.target.classList.add("show")
-        }
+        entry.target.classList.toggle("show",entry.isIntersecting)
+        entry.target.classList.toggle("hide",!entry.isIntersecting)
     })
 }, options);
 
