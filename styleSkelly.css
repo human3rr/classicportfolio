@@ -148,7 +148,7 @@ body{
 .workDescription{
     border: black 1px solid;
     /*background-color: #BBB8C0;*/
-    height: 60%;
+    height: 80%;
     overflow: hidden;
     color: black;
 }
