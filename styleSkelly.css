@@ -13,7 +13,8 @@
 body{
     display: grid;
     grid-template-columns: 3fr 2fr 3fr;
-    grid-template-rows: 0 repeat(10, 50vh);;
+    grid-template-rows: 0 repeat(10, 50vh);
+    background-color: #BBBBBB;
 }
 /*grid-area: <row-start> / <column-start> / <row-end> / <column-end>;*/
 .navcontainer{
@@ -23,7 +24,7 @@ body{
 }
 
 @keyframes flicker {  
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    100% {
         text-shadow:
         0 0 4px #ffffff8f,
         0 0 11px #ffffff8f,
@@ -33,16 +34,39 @@ body{
         0 0 90px #E216D2,
         0 0 100px #E216D2;    
     }
-    
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }    
-  }
+}
   
-#web, #developer, #for, #hire{
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#web{
     font-size: 4em;
     color: #ffffff8f;
-    animation: flicker 2.5s infinite alternate;
+    animation: flicker 1.5s infinite alternate;
+    letter-spacing: .5em;
+
+}
+
+#developer{
+    font-size: 4em;
+    color: #ffffff8f;
+    animation: flicker 1.5s infinite alternate .3s;
+    letter-spacing: .5em;
+}
+
+#for{
+    font-size: 4em;
+    color: #ffffff8f;
+    animation: flicker 1.5s infinite alternate .6s;
+    letter-spacing: .5em;
+}
+
+#hire{
+    font-size: 4em;
+    color: #ffffff8f;
+    animation: flicker 1.5s infinite alternate .9s;
     letter-spacing: .5em;
 }
 
@@ -67,6 +91,12 @@ body{
     align-self: center;
     justify-self: center;
 }
+
+.show{
+    animation: fadeIn 2s;
+    visibility: visible !important;
+
+}
 .about{
     grid-area: 4 / 3 / 6 / 4;
     align-self: center;
@@ -74,6 +104,7 @@ body{
     border: black 1px solid;
     width: 100%;
     height: 70%;
+    visibility: hidden;
 }
 .aboutHeader{
     font-size: 3em;
@@ -103,6 +134,7 @@ body{
     border: black 1px solid;
     width: 100%;
     height: 70%;
+    visibility: hidden;
 }
 .skillsHeader{
     font-size: 3em;
@@ -131,6 +163,7 @@ body{
     border: black 1px solid;
     width: 100%;
     height: 70%;
+    visibility: hidden;
 }
 .workHeader{
     font-size: 3em;
@@ -160,6 +193,7 @@ body{
     border: black 1px solid;
     width: 100%;
     height: 70%;
+    visibility: hidden;
 }
 .contactHeader{
     font-size: 3em;
