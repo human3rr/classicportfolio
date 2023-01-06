@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+.image.blockimg{
+    width: 70%;
+    border-radius: 20%;
+}
 body{
     background-color: #414040 !important;
 }
@@ -286,6 +290,7 @@ header{
     /*background-color: #BBB8C0;*/
     height: 60%;
     overflow: hidden;
+ 
 }
 
 .contact{
