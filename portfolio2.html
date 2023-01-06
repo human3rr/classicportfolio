@@ -11,33 +11,35 @@
     <script src="skelly.js" defer></script>
 </head>
 <body>
-    <div class="navcontainer">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Work</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CV</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-    </div>
+  <div class="navcontainer">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CV</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="main">
+
     <p id="web">WEB</p>
     <p id="developer">DEV</p>
     <p id="for">FOR</p>
@@ -45,11 +47,9 @@
     <div class="about">
       <div class="aboutHeader header">ABOUT</div>
       <div class="aboutDescription">
-        <p>Name's Noah <br>
-          Born and raised in Austin, Texas <br>
-          I'm a tech head with a background in computers and electrical engineering <br>
-          I'm looking to shift <em>from</em> my background in embedded linux development <em>to</em> full stack development <br>
-          The pages you're looking at are a reflection of my personality and desire to move towards my goal of mastery of my personal tech related pursuits <br>
+        <p>My name is Noah Brewer <br><br>
+          I currently reside in Austin, Texas <br><br>
+          I have a background in software development and electrical engineering.<br>
           If you're looking for someone who isn't afraid to work on a large breadth of technical challenges that involve the web, I'm your guy
         </p>
       </div>
@@ -65,10 +65,10 @@
     <div class="skills">
       <div class="skillsHeader header">SKILLS</div>
       <div class="skillsDescription">
-       <ul>
-        <li>Programming Languages
-          <ul>
-            <li>
+        <ul>
+          <li>Programming Languages
+            <ul>
+              <li>
               JavaScript
             </li>
             <li>
@@ -103,91 +103,87 @@
             <li>Jira</li>
           </ul>
         </li>
-       </ul>
-      </div>
+      </ul>
     </div>
-    <div class="skillsSupport">
-      <img class="image" src="assets/images/javascript.png" alt="tech logo">
-      <img class="image" src="assets/images/linuxtux.png" alt="tech logo">
-      <img class="image" src="assets/images/postgresql.png" alt="tech logo">
-      <img class="image" src="assets/images/docker.png" alt="tech logo">
+  </div>
+  <div class="skillsSupport">
+    <img class="image" src="assets/images/javascript.png" alt="tech logo">
+    <img class="image" src="assets/images/linuxtux.png" alt="tech logo">
+    <img class="image" src="assets/images/postgresql.png" alt="tech logo">
+    <img class="image" src="assets/images/docker.png" alt="tech logo">
+  </div>
+  <div class="work">
+    <div class="workHeader header">WORK</div>
+    <div class="workDescription">
+      <p>I've worked at the following businesses:
+        <div>
+          <header>IBM</header>
+          <p>I worked on the OpenBMC initiative and was responsible for various components related
+            to authorization and authentication. <br>
+            I was in charge of several new security feature requests on OpenBMC <br>
+            The features required development in Linux's authentication mechanism <em>PAM</em> <br>
+            Integration into our web server bmcweb our messageing mechanism dbus and our backend daemons that handled the requests <br>
+          </p>
+        </div>
+        <div>
+          <header>Vertiv/Dell</header>
+          <p>I developed for the iDRAC (Integrated Dell Remote Access Controller) at Dell. <br>
+            The position requred working within a large codebase and developing for feature requests and analyzing issues and developing bug fixes. <br>
+            The iDRAC project built ontop of Linux and gave me the sturdy foundation of knowledge about application development on Linux. <br>
+            I took ownership of our authentication solutions where I'd work on feature development and bug fixes related authentication along with general bug fixes.
+          </p>
+        </div>
+        <!--<div>
+          <header>Streamline Technical Services</header>
+          <p>Worked as a process engineer who worked independently to diagnose and repair Contol Modules for EqualLogic enterprise storage solutions. <br>
+            Analyzed digital schematics, printed circuit board Gerber files, and datasheets
+            Reprogrammed proms and CM flash devices for CM recovery
+            Gathered part schematics, organized replacement part ordering/procurement, 
+            Wrote documentation on diagnostic and repair procedures to assist technologists. 
+          </p>
+        </div>-->
+      </p>
     </div>
-    <div class="work">
-      <div class="workHeader header">WORK</div>
-      <div class="workDescription">
-        <p>I've worked at the following businesses:
-          <ul>
-            <li>IBM</li>
-            <li>Vertiv/Dell</li>
-            <li>STS</li>
-          </ul>
-          <div>
-            <header>IBM</header>
-            <p>I worked on the OpenBMC initiative and was responsible for various components related
-              to authorization and authentication. <br>
-              I was in charge of several new security feature requests on OpenBMC <br>
-              The features required development in Linux's authentication mechanism <em>PAM</em> <br>
-              Integration into our web server bmcweb our messageing mechanism dbus and our backend daemons that handled the requests <br>
-            </p>
-          </div>
-          <div>
-            <header>Vertiv/Dell</header>
-            <p>I developed for the iDRAC (Integrated Dell Remote Access Controller) at Dell. <br>
-              The position requred working within a large codebase and developing for feature requests and analyzing issues and developing bug fixes. <br>
-              The iDRAC project built ontop of Linux and gave me the sturdy foundation of knowledge about application development on Linux. <br>
-              I took ownership of our authentication solutions where I'd work on feature development and bug fixes related authentication along with general bug fixes.
-            </p>
-          </div>
-          <!--<div>
-            <header>Streamline Technical Services</header>
-            <p>Worked as a process engineer who worked independently to diagnose and repair Contol Modules for EqualLogic enterprise storage solutions. <br>
-              Analyzed digital schematics, printed circuit board Gerber files, and datasheets
-              Reprogrammed proms and CM flash devices for CM recovery
-              Gathered part schematics, organized replacement part ordering/procurement, 
-              Wrote documentation on diagnostic and repair procedures to assist technologists. 
-            </p>
-          </div>-->
-        </p>
-      </div>
+  </div>
+  <div class="workSupport">
+    <img class="image" src="assets/images/IBM_logo.svg" width="100px" height="100px" >
+    <img class="image" src="assets/images/Dell_Logo.svg" width="100px" height="100px" >
+    <img class="image" src="assets/images/OpenBMC_logo.png" alt="tech logo">
+    <img class="image" src="assets/images/vertiv.png" alt="tech logo">
+  </div>
+  
+  <div class="projects">
+    <div class="projectsHeader header">PROJECTS</div>
+    <div class="projectsDescription">
+      <p>
+        Under construction
+      </p>
     </div>
-    <div class="workSupport">
-      <img class="image" src="assets/images/IBM_logo.svg" width="100px" height="100px" >
-      <img class="image" src="assets/images/Dell_Logo.svg" width="100px" height="100px" >
-      <img class="image" src="assets/images/OpenBMC_logo.png" alt="tech logo">
-      <img class="image" src="assets/images/vertiv.png" alt="tech logo">
+  </div>
+  <div class="contact">
+    <div class="contactHeader header">CONTACT</div>
+    <div class="contactDescription">
+      <p>
+        <ul>
+          <li>Phone</li>
+          <li>Email</li>
+          <li>LinkedIn</li>
+          <li>Github</li>
+        </ul>
+      </p>
     </div>
-
-    <div class="projects">
-      <div class="projectsHeader header">PROJECTS</div>
-      <div class="projectsDescription">
-        <p>
-          TBD
-        </p>
-      </div>
-    </div>
-    <div class="contact">
-      <div class="contactHeader header">CONTACT</div>
-      <div class="contactDescription">
-        <p>
-          <ul>
-            <li>Phone</li>
-            <li>Email</li>
-            <li>LinkedIn</li>
-            <li>Github</li>
-          </ul>
-        </p>
-      </div>
-    </div>
-    <video autoplay loop muted id="skelly">
-        <source src="assets/skeleton.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video> 
+  </div>
+</div>
+  <video autoplay loop muted id="skelly">
+    <source src="assets/skeleton.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> 
 </body>
 <script>
-    let vid = document.querySelector('video')
-    console.log(vid)
-    vid.setAttribute('height', '100%');
-    vid.setAttribute('width', '100%');
-    vid.playbackRate = 1
+  let vid = document.querySelector('video')
+  console.log(vid)
+  vid.setAttribute('height', '100%');
+  vid.setAttribute('width', '100%');
+  vid.playbackRate = 1
 </script>
 </html>
