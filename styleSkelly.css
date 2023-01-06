@@ -4,7 +4,14 @@
 }
 body{
     background-color: #414040 !important;
+}
+header{
+    font-size:calc(14px + .5vw);
 
+}
+.underline{
+    border-bottom: white 3px solid;
+    width: 100%;
 }
 #skelly{
     position: absolute;
