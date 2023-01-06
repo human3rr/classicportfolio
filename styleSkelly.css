@@ -4,17 +4,22 @@
 }
 
 #skelly{
-    position: fixed;
+    position: absolute;
     object-fit: fill;
     z-index: -1;
     right: 0;
     bottom: 0;
+    /*animation: fadeOut 5s forwards;*/
 }
 body{
     display: grid;
     grid-template-columns: 3fr 2fr 3fr;
     grid-template-rows: 0 repeat(12, 50vh);
-    background-color: #BBBBBB;
+    background-color: #414040 !important;
+    max-width: 4000px;
+    row-gap: 20px;
+    color: #F8F9FA;
+
 }
 /*grid-area: <row-start> / <column-start> / <row-end> / <column-end>;*/
 .navcontainer{
@@ -134,7 +139,6 @@ body{
     /*background-color: #BBB8C0;*/
     height: 60%;
     overflow: hidden;
-    color: black;
 }
 
 .aboutSupport{
@@ -149,13 +153,17 @@ body{
     row-gap: 10%;
     column-gap: 5%;
 }
-.picBackground.picBackground0{
+.profilePicContainer{
     grid-area: 1 / 1 / 2 / 4;
     justify-self: center;
     align-self: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    display: grid;
+}
+.picBackground.picBackground0{
+    grid-area: 1 / 2 / 2 / 3;
     aspect-ratio : 1 / 1;
-    height: 100%;
-    width: auto;
+    width: 100%;
     max-width: initial;
 }
 .image.profilePic{
@@ -188,7 +196,6 @@ body{
     /*background-color: #BBB8C0;*/
     height: 60%;
     overflow: hidden;
-    color: black;
 }
 .skillsSupport{
     grid-area: 6 / 3 / 8 / 4;
@@ -225,7 +232,6 @@ body{
     /*background-color: #BBB8C0;*/
     height: 80%;
     overflow: hidden;
-    color: black;
 }
 .workSupport{
     grid-area: 8 / 1 / 10 / 2;
@@ -263,7 +269,6 @@ body{
     /*background-color: #BBB8C0;*/
     height: 60%;
     overflow: hidden;
-    color: black;
 }
 
 .contact{
@@ -289,7 +294,6 @@ body{
     /*background-color: #BBB8C0;*/
     height: 60%;
     overflow: hidden;
-    color: black;
 }
 
 .image{
@@ -309,14 +313,14 @@ body{
     /*max-height: 80%;*/
     aspect-ratio : 1 / 1;
     width: 100%;
-    background-color: #767680;;
+    background-color: transparent;
     border-radius: 50%;
     display: grid;
     justify-items: center;
     align-items: center;
     overflow: hidden;
     object-fit: contain;
-    border: black 3px solid;
+    border: white 3px solid;
     align-self: start;
     justify-self: center;
     max-width: 300px;
